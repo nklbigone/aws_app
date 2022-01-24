@@ -177,3 +177,263 @@
   INFO [dc76f1b4] Finished in 1.002 seconds with exit status 0 (successful).
   INFO The Gemfile's dependencies are satisfied, skipping installation
   INFO [c9aa92d6] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as app@23.22.63.8
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-01-24 15:07:52 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8c4a47d6] Running /usr/bin/env mkdir -p /tmp as app@23.22.63.8
+  INFO [8c4a47d6] Finished in 0.766 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-da7d8a4a6871b2fe1c25.sh 100.0%
+  INFO [31eb6c20] Running /usr/bin/env chmod 700 /tmp/git-ssh-da7d8a4a6871b2fe1c25.sh as app@23.22.63.8
+  INFO [31eb6c20] Finished in 0.764 seconds with exit status 0 (successful).
+  INFO [5ab59d42] Running /usr/bin/env git ls-remote https://github.com/nklbigone/aws_app HEAD as app@23.22.63.8
+  INFO [5ab59d42] Finished in 0.962 seconds with exit status 0 (successful).
+  INFO [59ec9f01] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/releases as app@23.22.63.8
+  INFO [59ec9f01] Finished in 0.768 seconds with exit status 0 (successful).
+  INFO [10d430ec] Running /usr/bin/env mkdir -p /var/www/aws_app/shared/log /var/www/aws_app/shared/tmp/pids /var/www/aws_app/shared/tmp/cache /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/shared/public/uploads /var/www/aws_app/shared/public/assets as app@23.22.63.8
+  INFO [10d430ec] Finished in 0.815 seconds with exit status 0 (successful).
+  INFO [25992271] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/shared/config as app@23.22.63.8
+  INFO [25992271] Finished in 0.781 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/aws_app/repo
+  INFO [a1222369] Running /usr/bin/env git remote set-url origin https://github.com/nklbigone/aws_app as app@23.22.63.8
+  INFO [a1222369] Finished in 0.780 seconds with exit status 0 (successful).
+  INFO [c269d526] Running /usr/bin/env git remote update --prune as app@23.22.63.8
+  INFO [c269d526] Finished in 1.305 seconds with exit status 0 (successful).
+  INFO [be75deb0] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124130805 as app@23.22.63.8
+  INFO [be75deb0] Finished in 0.819 seconds with exit status 0 (successful).
+  INFO [3eeea080] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/aws_app/releases/20220124130805 as app@23.22.63.8
+  INFO [3eeea080] Finished in 0.936 seconds with exit status 0 (successful).
+  INFO [5174c16d] Running /usr/bin/env echo "39b48853a283346759ce621a218cb19b57f3e758" > REVISION as app@23.22.63.8
+  INFO [5174c16d] Finished in 0.769 seconds with exit status 0 (successful).
+  INFO [c1698462] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124130805 /var/www/aws_app/releases/20220124130805/config as app@23.22.63.8
+  INFO [c1698462] Finished in 0.804 seconds with exit status 0 (successful).
+  INFO [d309bfde] Running /usr/bin/env rm /var/www/aws_app/releases/20220124130805/.env as app@23.22.63.8
+  INFO [d309bfde] Finished in 0.779 seconds with exit status 0 (successful).
+  INFO [f373963c] Running /usr/bin/env ln -s /var/www/aws_app/shared/.env /var/www/aws_app/releases/20220124130805/.env as app@23.22.63.8
+  INFO [f373963c] Finished in 0.809 seconds with exit status 0 (successful).
+  INFO [3c2464d2] Running /usr/bin/env ln -s /var/www/aws_app/shared/config/secrets.yml /var/www/aws_app/releases/20220124130805/config/secrets.yml as app@23.22.63.8
+  INFO [3c2464d2] Finished in 0.781 seconds with exit status 0 (successful).
+  INFO [cc7cb74e] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124130805 /var/www/aws_app/releases/20220124130805/tmp /var/www/aws_app/releases/20220124130805/public as app@23.22.63.8
+  INFO [cc7cb74e] Finished in 0.814 seconds with exit status 0 (successful).
+  INFO [d58b48e2] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124130805/log as app@23.22.63.8
+  INFO [d58b48e2] Finished in 0.769 seconds with exit status 0 (successful).
+  INFO [7d45421e] Running /usr/bin/env ln -s /var/www/aws_app/shared/log /var/www/aws_app/releases/20220124130805/log as app@23.22.63.8
+  INFO [7d45421e] Finished in 0.818 seconds with exit status 0 (successful).
+  INFO [6490ea97] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124130805/tmp/pids as app@23.22.63.8
+  INFO [6490ea97] Finished in 0.768 seconds with exit status 0 (successful).
+  INFO [d94a9e6b] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/pids /var/www/aws_app/releases/20220124130805/tmp/pids as app@23.22.63.8
+  INFO [d94a9e6b] Finished in 0.809 seconds with exit status 0 (successful).
+  INFO [2b49ad6b] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124130805/tmp/cache as app@23.22.63.8
+  INFO [2b49ad6b] Finished in 0.816 seconds with exit status 0 (successful).
+  INFO [3b9ae8ce] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/cache /var/www/aws_app/releases/20220124130805/tmp/cache as app@23.22.63.8
+  INFO [3b9ae8ce] Finished in 0.828 seconds with exit status 0 (successful).
+  INFO [1ca15935] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/releases/20220124130805/tmp/sockets as app@23.22.63.8
+  INFO [1ca15935] Finished in 0.781 seconds with exit status 0 (successful).
+  INFO [ee6b089d] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/uploads /var/www/aws_app/releases/20220124130805/public/uploads as app@23.22.63.8
+  INFO [ee6b089d] Finished in 0.810 seconds with exit status 0 (successful).
+  INFO [933dc685] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124130805/public/assets as app@23.22.63.8
+  INFO [933dc685] Finished in 0.768 seconds with exit status 0 (successful).
+  INFO [427c2b89] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/assets /var/www/aws_app/releases/20220124130805/public/assets as app@23.22.63.8
+  INFO [427c2b89] Finished in 0.827 seconds with exit status 0 (successful).
+  INFO [e4e29048] Running /usr/local/rbenv/bin/rbenv exec bundle config --local deployment true as app@23.22.63.8
+  INFO [e4e29048] Finished in 1.029 seconds with exit status 0 (successful).
+  INFO [e7ba7a7e] Running /usr/local/rbenv/bin/rbenv exec bundle config --local path /var/www/aws_app/shared/bundle as app@23.22.63.8
+  INFO [e7ba7a7e] Finished in 0.980 seconds with exit status 0 (successful).
+  INFO [78b74cd4] Running /usr/local/rbenv/bin/rbenv exec bundle config --local without development:test as app@23.22.63.8
+  INFO [78b74cd4] Finished in 1.006 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+  INFO [736280de] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as app@23.22.63.8
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-01-24 15:14:03 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4464068e] Running /usr/bin/env mkdir -p /tmp as app@23.22.63.8
+  INFO [4464068e] Finished in 0.822 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-a8dda52b021393626ddc.sh 100.0%
+  INFO [bc41f5db] Running /usr/bin/env chmod 700 /tmp/git-ssh-a8dda52b021393626ddc.sh as app@23.22.63.8
+  INFO [bc41f5db] Finished in 0.821 seconds with exit status 0 (successful).
+  INFO [572e2b19] Running /usr/bin/env git ls-remote https://github.com/nklbigone/aws_app HEAD as app@23.22.63.8
+  INFO [572e2b19] Finished in 0.976 seconds with exit status 0 (successful).
+  INFO [7293b958] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/releases as app@23.22.63.8
+  INFO [7293b958] Finished in 0.830 seconds with exit status 0 (successful).
+  INFO [4edd0328] Running /usr/bin/env mkdir -p /var/www/aws_app/shared/log /var/www/aws_app/shared/tmp/pids /var/www/aws_app/shared/tmp/cache /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/shared/public/uploads /var/www/aws_app/shared/public/assets as app@23.22.63.8
+  INFO [4edd0328] Finished in 0.865 seconds with exit status 0 (successful).
+  INFO [df44a59e] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/shared/config as app@23.22.63.8
+  INFO [df44a59e] Finished in 0.823 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/aws_app/repo
+  INFO [06b62bea] Running /usr/bin/env git remote set-url origin https://github.com/nklbigone/aws_app as app@23.22.63.8
+  INFO [06b62bea] Finished in 0.831 seconds with exit status 0 (successful).
+  INFO [9748e468] Running /usr/bin/env git remote update --prune as app@23.22.63.8
+  INFO [9748e468] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [b268fa32] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124131416 as app@23.22.63.8
+  INFO [b268fa32] Finished in 0.865 seconds with exit status 0 (successful).
+  INFO [07259b14] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/aws_app/releases/20220124131416 as app@23.22.63.8
+  INFO [07259b14] Finished in 0.988 seconds with exit status 0 (successful).
+  INFO [47aa2b3f] Running /usr/bin/env echo "81ad56f40f54ab3ca08a901d4b39bc86b39b33ef" > REVISION as app@23.22.63.8
+  INFO [47aa2b3f] Finished in 0.818 seconds with exit status 0 (successful).
+  INFO [613235dd] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124131416 /var/www/aws_app/releases/20220124131416/config as app@23.22.63.8
+  INFO [613235dd] Finished in 0.867 seconds with exit status 0 (successful).
+  INFO [ea176f29] Running /usr/bin/env rm /var/www/aws_app/releases/20220124131416/.env as app@23.22.63.8
+  INFO [ea176f29] Finished in 0.827 seconds with exit status 0 (successful).
+  INFO [99d723cd] Running /usr/bin/env ln -s /var/www/aws_app/shared/.env /var/www/aws_app/releases/20220124131416/.env as app@23.22.63.8
+  INFO [99d723cd] Finished in 0.868 seconds with exit status 0 (successful).
+  INFO [0a036694] Running /usr/bin/env ln -s /var/www/aws_app/shared/config/secrets.yml /var/www/aws_app/releases/20220124131416/config/secrets.yml as app@23.22.63.8
+  INFO [0a036694] Finished in 0.819 seconds with exit status 0 (successful).
+  INFO [4e783e53] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124131416 /var/www/aws_app/releases/20220124131416/tmp /var/www/aws_app/releases/20220124131416/public as app@23.22.63.8
+  INFO [4e783e53] Finished in 0.863 seconds with exit status 0 (successful).
+  INFO [9f8c7b81] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124131416/log as app@23.22.63.8
+  INFO [9f8c7b81] Finished in 0.828 seconds with exit status 0 (successful).
+  INFO [b946ce33] Running /usr/bin/env ln -s /var/www/aws_app/shared/log /var/www/aws_app/releases/20220124131416/log as app@23.22.63.8
+  INFO [b946ce33] Finished in 0.864 seconds with exit status 0 (successful).
+  INFO [7c1f2ab4] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124131416/tmp/pids as app@23.22.63.8
+  INFO [7c1f2ab4] Finished in 0.818 seconds with exit status 0 (successful).
+  INFO [04f6a558] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/pids /var/www/aws_app/releases/20220124131416/tmp/pids as app@23.22.63.8
+  INFO [04f6a558] Finished in 0.867 seconds with exit status 0 (successful).
+  INFO [fe717b40] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124131416/tmp/cache as app@23.22.63.8
+  INFO [fe717b40] Finished in 0.856 seconds with exit status 0 (successful).
+  INFO [718a5694] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/cache /var/www/aws_app/releases/20220124131416/tmp/cache as app@23.22.63.8
+  INFO [718a5694] Finished in 0.862 seconds with exit status 0 (successful).
+  INFO [7cbfc495] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/releases/20220124131416/tmp/sockets as app@23.22.63.8
+  INFO [7cbfc495] Finished in 0.828 seconds with exit status 0 (successful).
+  INFO [d9580b92] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/uploads /var/www/aws_app/releases/20220124131416/public/uploads as app@23.22.63.8
+  INFO [d9580b92] Finished in 0.868 seconds with exit status 0 (successful).
+  INFO [75babba9] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124131416/public/assets as app@23.22.63.8
+  INFO [75babba9] Finished in 0.826 seconds with exit status 0 (successful).
+  INFO [90089fdd] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/assets /var/www/aws_app/releases/20220124131416/public/assets as app@23.22.63.8
+  INFO [90089fdd] Finished in 0.866 seconds with exit status 0 (successful).
+  INFO [8664fd52] Running /usr/local/rbenv/bin/rbenv exec bundle config --local deployment true as app@23.22.63.8
+  INFO [8664fd52] Finished in 1.070 seconds with exit status 0 (successful).
+  INFO [30d70c4f] Running /usr/local/rbenv/bin/rbenv exec bundle config --local path /var/www/aws_app/shared/bundle as app@23.22.63.8
+  INFO [30d70c4f] Finished in 1.029 seconds with exit status 0 (successful).
+  INFO [b10827de] Running /usr/local/rbenv/bin/rbenv exec bundle config --local without development:test as app@23.22.63.8
+  INFO [b10827de] Finished in 1.064 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+  INFO [d4bc687f] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as app@23.22.63.8
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-01-24 15:23:57 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6e25bd51] Running /usr/bin/env mkdir -p /tmp as app@23.22.63.8
+  INFO [6e25bd51] Finished in 0.765 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-267366b7126872b4e967.sh 100.0%
+  INFO [a6f74a4a] Running /usr/bin/env chmod 700 /tmp/git-ssh-267366b7126872b4e967.sh as app@23.22.63.8
+  INFO [a6f74a4a] Finished in 0.765 seconds with exit status 0 (successful).
+  INFO [31e33492] Running /usr/bin/env git ls-remote https://github.com/nklbigone/aws_app HEAD as app@23.22.63.8
+  INFO [31e33492] Finished in 0.979 seconds with exit status 0 (successful).
+  INFO [743846f1] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/releases as app@23.22.63.8
+  INFO [743846f1] Finished in 0.760 seconds with exit status 0 (successful).
+  INFO [9feafd1e] Running /usr/bin/env mkdir -p /var/www/aws_app/shared/log /var/www/aws_app/shared/tmp/pids /var/www/aws_app/shared/tmp/cache /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/shared/public/uploads /var/www/aws_app/shared/public/assets as app@23.22.63.8
+  INFO [9feafd1e] Finished in 0.804 seconds with exit status 0 (successful).
+  INFO [c327ddfa] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/shared/config as app@23.22.63.8
+  INFO [c327ddfa] Finished in 0.766 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/aws_app/repo
+  INFO [14d09a6b] Running /usr/bin/env git remote set-url origin https://github.com/nklbigone/aws_app as app@23.22.63.8
+  INFO [14d09a6b] Finished in 0.723 seconds with exit status 0 (successful).
+  INFO [0ebe5847] Running /usr/bin/env git remote update --prune as app@23.22.63.8
+  INFO [0ebe5847] Finished in 0.908 seconds with exit status 0 (successful).
+  INFO [37d79990] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124132409 as app@23.22.63.8
+  INFO [37d79990] Finished in 0.818 seconds with exit status 0 (successful).
+  INFO [e51cf933] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/aws_app/releases/20220124132409 as app@23.22.63.8
+  INFO [e51cf933] Finished in 0.927 seconds with exit status 0 (successful).
+  INFO [cc46d00e] Running /usr/bin/env echo "81ad56f40f54ab3ca08a901d4b39bc86b39b33ef" > REVISION as app@23.22.63.8
+  INFO [cc46d00e] Finished in 0.768 seconds with exit status 0 (successful).
+  INFO [c30b2341] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124132409 /var/www/aws_app/releases/20220124132409/config as app@23.22.63.8
+  INFO [c30b2341] Finished in 0.806 seconds with exit status 0 (successful).
+  INFO [a816da17] Running /usr/bin/env rm /var/www/aws_app/releases/20220124132409/.env as app@23.22.63.8
+  INFO [a816da17] Finished in 0.766 seconds with exit status 0 (successful).
+  INFO [94009114] Running /usr/bin/env ln -s /var/www/aws_app/shared/.env /var/www/aws_app/releases/20220124132409/.env as app@23.22.63.8
+  INFO [94009114] Finished in 0.817 seconds with exit status 0 (successful).
+  INFO [8bbeb2c4] Running /usr/bin/env ln -s /var/www/aws_app/shared/config/secrets.yml /var/www/aws_app/releases/20220124132409/config/secrets.yml as app@23.22.63.8
+  INFO [8bbeb2c4] Finished in 0.768 seconds with exit status 0 (successful).
+  INFO [f0780009] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124132409 /var/www/aws_app/releases/20220124132409/tmp /var/www/aws_app/releases/20220124132409/public as app@23.22.63.8
+  INFO [f0780009] Finished in 0.805 seconds with exit status 0 (successful).
+  INFO [5997e3a5] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124132409/log as app@23.22.63.8
+  INFO [5997e3a5] Finished in 0.770 seconds with exit status 0 (successful).
+  INFO [0e6ecb5b] Running /usr/bin/env ln -s /var/www/aws_app/shared/log /var/www/aws_app/releases/20220124132409/log as app@23.22.63.8
+  INFO [0e6ecb5b] Finished in 0.805 seconds with exit status 0 (successful).
+  INFO [eac0a3f4] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124132409/tmp/pids as app@23.22.63.8
+  INFO [eac0a3f4] Finished in 0.770 seconds with exit status 0 (successful).
+  INFO [4ca72ae9] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/pids /var/www/aws_app/releases/20220124132409/tmp/pids as app@23.22.63.8
+  INFO [4ca72ae9] Finished in 0.805 seconds with exit status 0 (successful).
+  INFO [c93ab516] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124132409/tmp/cache as app@23.22.63.8
+  INFO [c93ab516] Finished in 0.788 seconds with exit status 0 (successful).
+  INFO [af3c9a3f] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/cache /var/www/aws_app/releases/20220124132409/tmp/cache as app@23.22.63.8
+  INFO [af3c9a3f] Finished in 0.808 seconds with exit status 0 (successful).
+  INFO [2b55085d] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/releases/20220124132409/tmp/sockets as app@23.22.63.8
+  INFO [2b55085d] Finished in 0.769 seconds with exit status 0 (successful).
+  INFO [04676a71] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/uploads /var/www/aws_app/releases/20220124132409/public/uploads as app@23.22.63.8
+  INFO [04676a71] Finished in 0.808 seconds with exit status 0 (successful).
+  INFO [cfc5351f] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124132409/public/assets as app@23.22.63.8
+  INFO [cfc5351f] Finished in 0.761 seconds with exit status 0 (successful).
+  INFO [61bc5303] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/assets /var/www/aws_app/releases/20220124132409/public/assets as app@23.22.63.8
+  INFO [61bc5303] Finished in 0.803 seconds with exit status 0 (successful).
+  INFO [8c56fbc4] Running /usr/local/rbenv/bin/rbenv exec bundle config --local deployment true as app@23.22.63.8
+  INFO [8c56fbc4] Finished in 1.009 seconds with exit status 0 (successful).
+  INFO [a819b087] Running /usr/local/rbenv/bin/rbenv exec bundle config --local path /var/www/aws_app/shared/bundle as app@23.22.63.8
+  INFO [a819b087] Finished in 0.971 seconds with exit status 0 (successful).
+  INFO [00a75e2f] Running /usr/local/rbenv/bin/rbenv exec bundle config --local without development:test as app@23.22.63.8
+  INFO [00a75e2f] Finished in 1.004 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+  INFO [74765071] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as app@23.22.63.8
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-01-24 15:43:00 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [267681a0] Running /usr/bin/env mkdir -p /tmp as app@23.22.63.8
+  INFO [267681a0] Finished in 0.720 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-c18507614a4ffcdaf1d7.sh 100.0%
+  INFO [4d246d60] Running /usr/bin/env chmod 700 /tmp/git-ssh-c18507614a4ffcdaf1d7.sh as app@23.22.63.8
+  INFO [4d246d60] Finished in 0.791 seconds with exit status 0 (successful).
+  INFO [0d19ef46] Running /usr/bin/env git ls-remote https://github.com/nklbigone/aws_app HEAD as app@23.22.63.8
+  INFO [0d19ef46] Finished in 0.944 seconds with exit status 0 (successful).
+  INFO [65d4ae86] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/releases as app@23.22.63.8
+  INFO [65d4ae86] Finished in 0.798 seconds with exit status 0 (successful).
+  INFO [e8529669] Running /usr/bin/env mkdir -p /var/www/aws_app/shared/log /var/www/aws_app/shared/tmp/pids /var/www/aws_app/shared/tmp/cache /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/shared/public/uploads /var/www/aws_app/shared/public/assets as app@23.22.63.8
+  INFO [e8529669] Finished in 0.839 seconds with exit status 0 (successful).
+  INFO [85ca6a79] Running /usr/bin/env mkdir -p /var/www/aws_app/shared /var/www/aws_app/shared/config as app@23.22.63.8
+  INFO [85ca6a79] Finished in 0.800 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/aws_app/repo
+  INFO [04ca4aad] Running /usr/bin/env git remote set-url origin https://github.com/nklbigone/aws_app as app@23.22.63.8
+  INFO [04ca4aad] Finished in 0.809 seconds with exit status 0 (successful).
+  INFO [e41884fa] Running /usr/bin/env git remote update --prune as app@23.22.63.8
+  INFO [e41884fa] Finished in 0.939 seconds with exit status 0 (successful).
+  INFO [739600e1] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124134313 as app@23.22.63.8
+  INFO [739600e1] Finished in 0.838 seconds with exit status 0 (successful).
+  INFO [6177ee83] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/aws_app/releases/20220124134313 as app@23.22.63.8
+  INFO [6177ee83] Finished in 0.970 seconds with exit status 0 (successful).
+  INFO [7ebbd290] Running /usr/bin/env echo "81ad56f40f54ab3ca08a901d4b39bc86b39b33ef" > REVISION as app@23.22.63.8
+  INFO [7ebbd290] Finished in 0.798 seconds with exit status 0 (successful).
+  INFO [49fd459c] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124134313 /var/www/aws_app/releases/20220124134313/config as app@23.22.63.8
+  INFO [49fd459c] Finished in 0.837 seconds with exit status 0 (successful).
+  INFO [293f03f5] Running /usr/bin/env rm /var/www/aws_app/releases/20220124134313/.env as app@23.22.63.8
+  INFO [293f03f5] Finished in 0.795 seconds with exit status 0 (successful).
+  INFO [44986063] Running /usr/bin/env ln -s /var/www/aws_app/shared/.env /var/www/aws_app/releases/20220124134313/.env as app@23.22.63.8
+  INFO [44986063] Finished in 0.835 seconds with exit status 0 (successful).
+  INFO [70675448] Running /usr/bin/env ln -s /var/www/aws_app/shared/config/secrets.yml /var/www/aws_app/releases/20220124134313/config/secrets.yml as app@23.22.63.8
+  INFO [70675448] Finished in 0.793 seconds with exit status 0 (successful).
+  INFO [88e87cb8] Running /usr/bin/env mkdir -p /var/www/aws_app/releases/20220124134313 /var/www/aws_app/releases/20220124134313/tmp /var/www/aws_app/releases/20220124134313/public as app@23.22.63.8
+  INFO [88e87cb8] Finished in 0.834 seconds with exit status 0 (successful).
+  INFO [4f7d1550] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124134313/log as app@23.22.63.8
+  INFO [4f7d1550] Finished in 0.799 seconds with exit status 0 (successful).
+  INFO [a7fc964a] Running /usr/bin/env ln -s /var/www/aws_app/shared/log /var/www/aws_app/releases/20220124134313/log as app@23.22.63.8
+  INFO [a7fc964a] Finished in 0.836 seconds with exit status 0 (successful).
+  INFO [3ea22c2b] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124134313/tmp/pids as app@23.22.63.8
+  INFO [3ea22c2b] Finished in 1.020 seconds with exit status 0 (successful).
+  INFO [6608ccd0] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/pids /var/www/aws_app/releases/20220124134313/tmp/pids as app@23.22.63.8
+  INFO [6608ccd0] Finished in 0.840 seconds with exit status 0 (successful).
+  INFO [b68e5e3d] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124134313/tmp/cache as app@23.22.63.8
+  INFO [b68e5e3d] Finished in 0.833 seconds with exit status 0 (successful).
+  INFO [46708396] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/cache /var/www/aws_app/releases/20220124134313/tmp/cache as app@23.22.63.8
+  INFO [46708396] Finished in 0.831 seconds with exit status 0 (successful).
+  INFO [805acf9b] Running /usr/bin/env ln -s /var/www/aws_app/shared/tmp/sockets /var/www/aws_app/releases/20220124134313/tmp/sockets as app@23.22.63.8
+  INFO [805acf9b] Finished in 0.805 seconds with exit status 0 (successful).
+  INFO [1161585f] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/uploads /var/www/aws_app/releases/20220124134313/public/uploads as app@23.22.63.8
+  INFO [1161585f] Finished in 0.848 seconds with exit status 0 (successful).
+  INFO [236c132e] Running /usr/bin/env rm -rf /var/www/aws_app/releases/20220124134313/public/assets as app@23.22.63.8
+  INFO [236c132e] Finished in 0.802 seconds with exit status 0 (successful).
+  INFO [0c5a9c8e] Running /usr/bin/env ln -s /var/www/aws_app/shared/public/assets /var/www/aws_app/releases/20220124134313/public/assets as app@23.22.63.8
+  INFO [0c5a9c8e] Finished in 0.833 seconds with exit status 0 (successful).
+  INFO [b0146ddf] Running /usr/local/rbenv/bin/rbenv exec bundle config --local deployment true as app@23.22.63.8
+  INFO [b0146ddf] Finished in 1.029 seconds with exit status 0 (successful).
+  INFO [31212dfa] Running /usr/local/rbenv/bin/rbenv exec bundle config --local path /var/www/aws_app/shared/bundle as app@23.22.63.8
+  INFO [31212dfa] Finished in 1.004 seconds with exit status 0 (successful).
+  INFO [f12b7c55] Running /usr/local/rbenv/bin/rbenv exec bundle config --local without development:test as app@23.22.63.8
+  INFO [f12b7c55] Finished in 1.138 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+  INFO [9128027e] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as app@23.22.63.8
