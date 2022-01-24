@@ -4,7 +4,7 @@ lock '3.16.0'
 set :application, 'aws_app'
 # cloneするgitのレポジトリ
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/nomurakouji/aws_app'
+set :repo_url, 'https://github.com/nklbigone/aws_app'
 # deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
 set :branch, ENV['BRANCH'] || 'master'
 # deploy先のディレクトリ。
